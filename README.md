@@ -1,6 +1,8 @@
 
 # Diversity-based Countermeasure for Adversarial Machine Learning Attacks Against ML-based NIDS
 
+[![Paper](https://img.shields.io/badge/Paper-Under%20Review-lightgrey)](#)
+
 This repository contains the code and resources associated with our paper, *"Diversity-based Countermeasure for Adversarial Machine Learning Attacks Against ML-based NIDS"*.
 
 ## Table of Contents
@@ -9,7 +11,7 @@ This repository contains the code and resources associated with our paper, *"Div
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
+- [Citation](#citation)
 
 ## Overview
 Machine Learning (ML) techniques for Network Intrusion Detection Systems (NIDS) are vulnerable to adversarial attacks. To mitigate these vulnerabilities, we propose **Diversity-based Multi-Objective Optimization Defense (D-MOOD)**, an ensemble-based countermeasure that increases robustness through classification diversity.
@@ -88,7 +90,7 @@ The main components of the repository are organized as follows:
 We use the raw [UNSW-NB15 dataset (PCAP format)](https://doi.org/10.1109/MilCIS.2015.7348942) and export our own features based on [IPFIX (Internet Protocol Flow Information Export)](https://www.iana.org/assignments/ipfix/ipfix.xhtml#:~:text=This%20Information%20Element%20is%20used%20to%20encapsulate%20non-%20IPFIX%20data). We extract the flow using [Go-Flows Exporter](https://doi.org/10.1109/COMST.2020.2989695) to obtain the features. To prepare the dataset for training, use the `PrepareDataset.ipynb` notebook located in the root directory. This notebook includes all necessary steps to convert flow traffic data into a suitable format for training machine learning models.
 
 
-The dataset is available at the following link: [here the link].
+The dataset used in the paper is available at: [UNSW-NB15-ESP](https://github.com/espindolaallan/unsw-nb15-esp) 
 
 
 ### Models
@@ -115,6 +117,10 @@ The following figure presents a parallel coordinates plot summarizing the Pareto
 
 ![Parallel Coordinates Plot](img/parallel_coordinates.png)
 
+## Citation
 
-## Contributing
-If you would like to contribute to this project, feel free to create a pull request or open an issue for suggestions or bug reports.
+If you use this code in your research, please cite our paper (currently under review at **JNCA**):
+
+> Espindola, A., Viegas, E., Casimiro, A., Santin, A., Ferreira, P.  
+> *Diversity-based Countermeasure for Adversarial Machine Learning Attacks Against ML-based NIDS.*  
+> Submitted to **Journal of Network and Computer Applications (JNCA)**, 2025.
